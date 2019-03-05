@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,108 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StarApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-Z4-WpK">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iL0-3z-rBe">
+                                <rect key="frame" x="48" y="299.5" width="928" height="169"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbw-84-Z8b">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="169"/>
+                                        <state key="normal" image="star-off"/>
+                                        <state key="selected" image="star-on"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ys2-IG-OOj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXU-96-e6Q">
+                                        <rect key="frame" x="176" y="0.0" width="200" height="169"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="pVt-HE-WSp"/>
+                                        </constraints>
+                                        <state key="normal" image="star-off"/>
+                                        <state key="selected" image="star-on"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="moy-mO-9eX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttU-O1-u2T">
+                                        <rect key="frame" x="376" y="0.0" width="176" height="169"/>
+                                        <state key="normal" image="star-off"/>
+                                        <state key="selected" image="star-on"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Th8-5E-yaN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csD-tI-fEs">
+                                        <rect key="frame" x="552" y="0.0" width="200" height="169"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="hg4-gS-SN7"/>
+                                        </constraints>
+                                        <state key="normal" image="star-off"/>
+                                        <state key="selected" image="star-on"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZA-91-KMQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2o-NJ-WmA">
+                                        <rect key="frame" x="752" y="0.0" width="176" height="169"/>
+                                        <state key="normal" image="star-off"/>
+                                        <state key="selected" image="star-on"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQO-ke-JLa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6e-aA-wm8">
+                                <rect key="frame" x="457.5" y="700" width="109" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="Dcw-Tu-6xG"/>
+                                    <constraint firstAttribute="height" constant="48" id="P0G-Ph-f1o"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.32030403614044189" green="0.6463736891746521" blue="0.58032459020614624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jw-20-zYy"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qfj-Z4-WpK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="I0W-yv-DWl"/>
+                            <constraint firstItem="iL0-3z-rBe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KZM-t3-DXc"/>
+                            <constraint firstItem="iL0-3z-rBe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="md6-8I-96t"/>
+                            <constraint firstItem="Qfj-Z4-WpK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n8P-Yq-KYW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="q6e-aA-wm8" secondAttribute="bottom" constant="20" id="pnj-tE-Hju"/>
+                            <constraint firstItem="Qfj-Z4-WpK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tYL-ba-lwp"/>
+                            <constraint firstItem="q6e-aA-wm8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ucI-wm-Oi2"/>
+                            <constraint firstItem="Qfj-Z4-WpK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xXP-Gj-E4R"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="gbw-84-Z8b" id="xTa-D7-YX2"/>
+                        <outlet property="button2" destination="nXU-96-e6Q" id="3aG-cW-Fcj"/>
+                        <outlet property="button3" destination="ttU-O1-u2T" id="clL-Iy-GkY"/>
+                        <outlet property="button4" destination="csD-tI-fEs" id="IqI-lV-55k"/>
+                        <outlet property="button5" destination="V2o-NJ-WmA" id="5CD-gM-p5C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.0078125" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Rectangle" width="1024" height="768"/>
+        <image name="star-off" width="176" height="169"/>
+        <image name="star-on" width="176" height="169"/>
+    </resources>
 </document>
