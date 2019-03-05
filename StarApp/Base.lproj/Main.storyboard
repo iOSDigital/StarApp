@@ -99,13 +99,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="button1" destination="gbw-84-Z8b" id="xTa-D7-YX2"/>
-                        <outlet property="button2" destination="nXU-96-e6Q" id="3aG-cW-Fcj"/>
-                        <outlet property="button3" destination="ttU-O1-u2T" id="clL-Iy-GkY"/>
-                        <outlet property="button4" destination="csD-tI-fEs" id="IqI-lV-55k"/>
-                        <outlet property="button5" destination="V2o-NJ-WmA" id="5CD-gM-p5C"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
